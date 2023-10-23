@@ -1,0 +1,7 @@
+.follow-cursor-text {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  color: black;
+  pointer-events: none;
+}
