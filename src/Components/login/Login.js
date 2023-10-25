@@ -13,7 +13,7 @@ const Login = () => {
     
 
       <div style={{backgroundImage : `url(${block3})`, width :"100%" , height :"100%"}} className="bg-black w-screen h-screen fixed"> 
-  <div style={{backgroundImage: `url(${block})`}} className={`h-[30rem] w-[23rem] bg-white items-center ml-[30rem] mt-[4rem] rounded-md animate-bounce`}>
+  <div style={{backgroundImage: `url(${block})`}} className={`h-[30rem] w-[23rem] bg-white items-center ml-[30rem] mt-[4rem] rounded-md`}>
           <div className="w-[4rem] py-6 h-auto font-bold  text-5xl ml-[4rem] justify-center border-spacing-1">
             <h1>Welcome! </h1>
           </div>
