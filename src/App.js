@@ -1,26 +1,19 @@
-import './App.css';
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Singup from './Components/Singup/Singup';
-import Login from './Components/login/Login';
+import React from 'react';
+import { AnimationProvider } from './Components/AnimationContext';
+import Login from './Components/login/Login'; // Your Login component
+import Signup from './Components/Singup/Singup'; // Your Signup component
 
-
-export default function App()  {
+function App() {
   return (
-   <>
-    <BrowserRouter>
-      <Routes>
-      <Route path="/" element={<Login />}>
-          <Route index element={<Login />} />
-          <Route path="Singup" element={<Singup />} />
-          {/* <Route path="*" element={<NoPage />} /> */}
-          
-        </Route>
-      </Routes>
-    </BrowserRouter>
-   </>
+    <AnimationProvider>
+    <div>
+
+      {/* Your app components */}
+      <Login />
+      <Signup />
+    </div>
+     </AnimationProvider>
   );
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+export default App;
